@@ -102,7 +102,7 @@ projects:
       - title: Fine-Grained Causation
         venue: In progress
         abstract: |
-          Sometimes causation is fine-grained — too fine-grained to capture as a relation between events. Some philosophers react to this problem of fine-grained causation by insisting that events are correspondingly fine-grained. I argue that this fine-grained event causation generates a new problem: it wildly underestimates how common it is for some effects to share a common cause. I then argue that causation comes both in a coarse-grained variety (which avoids this new problem) and in a fine-grained variety. I call this the dual view of causal grain. I then show how to reduce coarse-grained causation to fine-grained causation.
+          Sometimes causation is too fine-grained to capture as a relation between events. Some philosophers react to this problem of fine-grained causation by insisting that events are correspondingly fine-grained. I argue that this fine-grained event causation generates a new problem: it wildly underestimates how common it is for some effects to share a common cause. I then argue that causation comes both in a coarse-grained variety (which avoids this new problem) and in a fine-grained variety. I call this the dual view of causal grain. I then show how to reduce coarse-grained causation to fine-grained causation.
       - title: Ordinary Events
         venue: In progress
         abstract: |
