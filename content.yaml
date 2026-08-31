@@ -92,7 +92,7 @@ projects:
     figure:
       src: assets/images/Sunset.png
       alt: Sunset
-      caption: What is the relation between the sunrise and the rising sun? A distinctive kind of ontological dependence that blocks the sunrise from causing anything the sun does not
+      caption: What is the relation between the sunrise and the rising sun? A distinctive kind of ontological dependence that blocks the sunrise from causing anything the sun does not.
     papers:
       - title: Thing Causation
         venue: Nous, 2024
@@ -112,6 +112,7 @@ projects:
       - title: Doing - An Essay on Causation, Events, and Action in the Most General Sense
         venue: PhD dissertation (MIT, 2020)
         abstract: |
+          Abstract here
 
 
 
