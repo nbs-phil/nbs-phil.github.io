@@ -70,7 +70,7 @@ site:
       I am a philosopher based at the Center for Advanced Studies, Human Abilities, in Berlin, and jointly at the Freie Universitӓt Berlin. I work mainly on a mix of metaphysics and action theory, as well as ethics and philosophy of language. Before coming to Berlin, I was a postdoc at MIT, and before that, I taught at the Harvard Kennedy School of Government, while completing my PhD, also at MIT.
 
     - >
-      This coming semester I am teaching a course on the existence of God, and coorganizing a reading group on trying and effort. Please contact me if you have questions about these.
+      This coming semester I am teaching a course on philosophy of religion, and coorganizing a reading group on trying and effort. Please contact me if you have questions about these.
       Below are some of my main research projects.
 
 research:
@@ -94,7 +94,7 @@ projects:
     figure:
       src: assets/images/Sunset.png
       alt: Sunset
-      caption: Figure 1. What is the relation between the sunset and the setting sun? A distinctive kind of ontological dependence that blocks the sunset from causing anything the sun does not
+      caption: What is the relation between the sunrise and the rising sun? A distinctive kind of ontological dependence that blocks the sunrise from causing anything the sun does not
     papers:
       - title: Thing Causation
         venue: Nous, 2024
@@ -124,13 +124,13 @@ projects:
       # Multiple figures stack in the right column (top to bottom, in list order)
       - src: assets/images/twin-cities.png
         alt: Twin cities
-        caption: Figure 2. if you are going to the Twin Cities, then it follows, simply as a matter of logic, that you’re going to City A or going to City B.
+        caption: If you are going to the Twin Cities, then it follows, simply as a matter of logic, that you’re going to City A or you're going to City B.
       - src: assets/images/rocket_ship.png
         alt: Rocket ship
-        caption: Figure 3. No matter your intentions, without a rocket ship you are not going to the moon.
+        caption: No matter your intentions, without a rocket ship you are not going to the moon.
       - src: assets/images/mountain.png
         alt: mountain
-        caption: Figure 4.  Even when you are only partway up the mountain, you have exercised your ability to climb it.
+        caption: Even when you are only partway up the mountain, you have exercised your ability to climb it.
 
     papers:
       - title: Progressive Specificity
@@ -171,7 +171,7 @@ projects:
     figure:
       src: assets/images/martian.png
       alt: Martian
-      caption: Figure 5.  Huh. Does something great happen if the ball goes through the hoop enough times?
+      caption: Huh. Does something great happen if the ball goes through the hoop enough times?
 
     papers:
       - title: Who Cares about Winning?
@@ -202,7 +202,7 @@ projects:
     figure:
       src: assets/images/alice.png
       alt: Alice and Beth
-      caption: Figure 6. Alice and Beth are real people who really have hats. No one else is depicted here. These facts make it the case that everyone depicted in the picture has a hat. But they only contingently do so. Suppose Beth, without losing her hat, were deleted from the picture. Then only Alice’s hattedness would make it the case that everyone depicted has a hat.
+      caption: Alice and Beth are real people who really have hats. No one else is depicted here. These facts make it the case that everyone depicted in the picture has a hat. But they only contingently do so. Suppose Beth, without losing her hat, were deleted from the picture. Then only Alice’s hattedness would make it the case that everyone depicted has a hat.
 
     papers:
       - title: Contingent Grounding
@@ -213,7 +213,7 @@ projects:
       - title: How Similar Are Causation and Grounding? Extrinsicality, Contingency, Ennobling
         venue: Facets of Reality, Forthcoming, with Lisa Vogt
         abstract: |
-          We argue that the contingency of grounding strengthens the parallel between grounding and causation. Just as trumping preemption shows that causation is not an intrinsic relation, similar cases of grounding show it not to be an internal relation.
+          The contingency of grounding strengthens the parallel between grounding and causation. Just as trumping preemption shows that causation is not an intrinsic relation, similar cases of grounding show it not to be an internal relation.
 
 
   - title:  Haecceitistic Gaps
@@ -223,7 +223,7 @@ projects:
     figure:
       src: assets/images/Eiffel_tower.png
       alt: Eiffel Tower
-      caption: Figure 7.  In Paris you will find the Eiffel Tower, not just an exact copy of it. What in fundamental reality determines that the Eiffel Tower is there, and not just a duplicate?
+      caption: In Paris you will find the Eiffel Tower, not just an exact copy of it. What in fundamental reality determines that the Eiffel Tower is there, and not just a duplicate?
 
 
     papers:
@@ -241,12 +241,12 @@ projects:
 
   - title: Supererogation and Duty to Self
     abstract: |
-      A theory of supererogation must account for both its optionality and its permissibility. The best way to do this is to posit ‘prerogatives’, which are balanced against the reasons in favor of superogating. But what are prerogatives? We say they are waivable duties to oneself.
+      A theory of supererogation must account for both its optionality and its permissibility. The best way to do this is to posit ‘prerogatives’, which are balanced against the reasons in favor of superogating. But what are prerogatives? Waivable duties to oneself.
 
     figure:
       src: assets/images/Ouch.png
       alt: Wronging Oneself
-      caption: Figure 8. Is this man wronging himself? If and only if in pinching another person with their consent, he’d be wronging them.
+      caption: Is this man wronging himself? If and only if in pinching another person with their consent, he’d be wronging them.
 
     papers:
       - title: Supererogation and the Limits of Reasons
@@ -258,5 +258,5 @@ projects:
       - title: Wronging Oneself
         venue: Journal of Philosophy, 2024, with Daniel Muñoz
         abstract: |
-          We give our theory of duties to oneself. They work just like duties to others; mostly importantly, they have the same conditions for waiver. The result is a self-other symmetric view of morality, on which we wrong ourselves exactly when we do to ourselves what would wrong a relevantly similar consenting other.
+          We give our theory of duties to oneself. They work just like duties to others; most importantly, they have the same conditions for waiver. The result is a self-other symmetric view of morality, on which we wrong ourselves exactly when we do to ourselves what would wrong a relevantly similar consenting other.
 
