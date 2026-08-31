@@ -80,13 +80,16 @@ research:
     src: assets/images/projects-summary.jpg
     alt: Fortune cookie — summary of research projects
     caption: |
-      I recently received this fortune, but I wasn't sure which of my examples I should expect to be inspiring. So I have included inspiring illustrations of some of my examples (drawings by Fred Schmitt).
+      I recently received this fortune, but I wasn't sure which of my examples I should expect to be inspiring. So I have included potentially inspiring illustrations of some of my examples (drawings by Fred Schmitt).
 
 projects:
   # --- Copy this block to add a new project ---
   - title: Thing Causation
     abstract: |
-      I argue that causes most fundamentally are not events, but rather things –- pianos, people, puddles. I also develop a theory of events which is designed to match our naive conception of them. The theory makes use of a concept of doing that I develop, of which I take causing to be a subspecies. Using the theory, I show how event causation reduces to thing causation. These ideas grew out of my dissertation.
+      I argue that causes most fundamentally are not events, but rather things –- pianos, people, puddles. 
+      I also develop a theory of events which is designed to match our naive conception of them. 
+      The theory makes use of a concept of doing that I develop, of which I take causing to be a subspecies. 
+      Using the theory, I show how event causation reduces to thing causation. These ideas grew out of my dissertation.
     # Single figure — use "figure:" for one image, "figures:" for several
     figure:
       src: assets/images/Sunset.png
