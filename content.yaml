@@ -70,7 +70,7 @@ site:
       I am a philosopher based at the Center for Advanced Studies, Human Abilities, in Berlin, and jointly at the Freie Universitӓt Berlin. I work mainly on a mix of metaphysics and action theory, as well as ethics and philosophy of language. Before coming to Berlin, I was a postdoc at MIT, and before that, I taught at the Harvard Kennedy School of Government, while completing my PhD, also at MIT.
 
     - >
-      This coming semester I am teaching a course on the existence of God, and organizing a reading group on trying and effort. Please contact me if you have questions about these.
+      This coming semester I am teaching a course on the existence of God, and coorganizing a reading group on trying and effort. Please contact me if you have questions about these.
       Below are some of my main research projects.
 
 research:
@@ -86,7 +86,7 @@ projects:
   # --- Copy this block to add a new project ---
   - title: Thing Causation
     abstract: |
-      I argue that causes most fundamentally are not events, but rather things –- pianos, people, puddles. 
+      I argue that causes most fundamentally are not events, but rather things, such as pianos, people, and puddles. 
       I also develop a theory of events which is designed to match our naive conception of them. 
       The theory makes use of a concept of doing that I develop, of which I take causing to be a subspecies. 
       Using the theory, I show how event causation reduces to thing causation. These ideas grew out of my dissertation.
@@ -134,7 +134,7 @@ projects:
 
     papers:
       - title: Progressive Specificity
-        venue:  Revise and resubmit, Mind, with Ginger Schultheis
+        venue:  Mind, Forthcoming, with Ginger Schultheis
         link: https://doi.org/10.0000/example.2
         abstract: |
           We defend a new logical constraint on the progressive, Progressive Specificity, which says that what you are doing is always specific. More precisely, if you are Ving, and to V is to X or Y, then you are Xing or you are Ying. We offer seven arguments for Progressive Specificity. These arguments extend to the futurative progressive, showing that prevailing accounts of the futurative, which treat it as conveying plans, must be rejected. We explore close connections between Progressive Specificity and the principle of Conditional Excluded Middle in the logic of conditionals. These connections, alongside other logical similarities between the progressive and conditionals, suggest a conditional account of the progressive. We sketch such an account.
@@ -201,7 +201,7 @@ projects:
 
     figure:
       src: assets/images/alice.png
-      alt: Alice and Betch
+      alt: Alice and Beth
       caption: Figure 6. Alice and Beth are real people who really have hats. No one else is depicted here. These facts make it the case that everyone depicted in the picture has a hat. But they only contingently do so. Suppose Beth, without losing her hat, were deleted from the picture. Then only Alice’s hattedness would make it the case that everyone depicted has a hat.
 
     papers:
@@ -211,7 +211,7 @@ projects:
           I argue that whether some facts ground another can be a contingent matter. The contingency of grounding entails that every previously proposed theory of what grounds grounding facts is false. I construct a new theory, the ennobling theory. Ennoblers are meta-grounds.
 
       - title: How Similar Are Causation and Grounding? Extrinsicality, Contingency, Ennobling
-        venue: Forthcoming, Facets of Reality, with Lisa Vogt
+        venue: Facets of Reality, Forthcoming, with Lisa Vogt
         abstract: |
           We argue that the contingency of grounding strengthens the parallel between grounding and causation. Just as trumping preemption shows that causation is not an intrinsic relation, similar cases of grounding show it not to be an internal relation.
 
@@ -228,13 +228,13 @@ projects:
 
     papers:
       - title: Haecceitism Untethered
-        venue: Email for a draft
+        venue: Draft
         abstract: |
           I motivate a constraint on modal space. Tethering says that for any distinct duplicate worlds w1 and w2 with the same fundamental individuals, w1 and w2 differ in their permutations of fundamental individuals. Anti-haecceitism trivially entails Tethering, but haecceitism is logically neutral on Tethering. I argue that haecceitists should accept Tethering. After motivating Tethering, I pose a serious problem for it. The problem concerns the possibility of ‘recycling’ of an object’s parts, Ship-of-Theseus-style, either across time or across possible worlds. It is extremely difficult to avoid the conclusion that the fundamental facts about an object’s very small parts, and indeed about any plausibly fundamental objects, could necessitate that it is the Ship of Theseus was have here, rather than some other duplicate ship.
 
 
       - title: Microism Lost?
-        venue:  R&R, Philosophical Quarterly
+        venue:  Draft, R&R
         abstract: |
           I consider what lesson we should draw from these recycling problems. The most common lesson drawn in recent work is that macro objects are fundamental. I show a surprising problem for this macroist view. It results in widespread overdetermination, on which qualitative facts about macro objects have two separate fundamental grounds.
 
