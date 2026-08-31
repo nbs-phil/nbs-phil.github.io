@@ -201,7 +201,7 @@ projects:
     figure:
       src: assets/images/alice.png
       alt: Alice and Beth
-      caption: Alice and Beth are real people who really have hats. No one else is depicted here. These facts make it the case that everyone depicted in the picture has a hat. But they only contingently do so. Suppose Beth, without losing her hat, were deleted from the picture. Then only Alice’s hattedness would make it the case that everyone depicted has a hat.
+      caption: Alice and Beth are real people who really have hats. No one else is depicted in the picture. These facts make it the case that everyone depicted in the picture has a hat. But they only contingently do so. Suppose Beth, without losing her hat, were deleted from the picture. Then only Alice’s hattedness would make it the case that everyone depicted has a hat.
 
     papers:
       - title: Contingent Grounding
