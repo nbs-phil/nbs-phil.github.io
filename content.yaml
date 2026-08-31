@@ -17,7 +17,7 @@
 # site          — name, bio, contact links, footer date
 #                 Also update <title> and og:* tags in index.html when changing name/description
 #                 (required for link previews — share crawlers don't run JavaScript)
-# research      — section heading + fortune-cookie image below bio
+# research      — section heading, then projects; fortune-cookie image + caption follow below
 # projects[]    — each research project (always visible on the page)
 #
 # PROJECT FIELDS
@@ -75,7 +75,7 @@ site:
 
 research:
   heading: Research Projects
-  # Image shown between bio and project list ("fortune cookie" block)
+  # Fortune-cookie image + caption — shown after the project list
   summary_image:
     src: assets/images/projects-summary.jpg
     alt: Fortune cookie — summary of research projects
@@ -236,7 +236,7 @@ projects:
           I consider what lesson we should draw from these recycling problems. The most common lesson drawn in recent work is that macro objects are fundamental. I show a surprising problem for this macroist view. It results in widespread overdetermination, on which qualitative facts about macro objects have two separate fundamental grounds.
 
 
-  - title: Supererogation and Duty to Self.
+  - title: Supererogation and Duty to Self
     abstract: |
       A theory of supererogation must account for both its optionality and its permissibility. The best way to do this is to posit ‘prerogatives’, which are balanced against the reasons in favor of superogating. But what are prerogatives? We say they are waivable duties to oneself.
 

@@ -3,8 +3,8 @@
  *
  * Layout overview (top to bottom):
  *   1. Bio (#bio-section)
- *   2. Fortune cookie image (#cookie-section)
- *   3. Research projects (#research-section)
+ *   2. Research projects (#research-section)
+ *   3. Fortune cookie image + caption (#cookie-section)
  *      Each project: text + papers (left), stacked figures (right, sticky on desktop)
  *
  * Key variables below control page width, colors, and fonts.
@@ -63,12 +63,14 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
-#cookie-section {
-  margin-top: 1.25rem;
-}
-
 #research-section {
   margin-top: 1.5rem;
+}
+
+#cookie-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
 }
 
 .bio-header {
@@ -135,7 +137,7 @@ body {
 .cookie-figure img {
   display: block;
   width: 100%;
-  max-height: 5rem;
+  max-height: 3.25rem;
   height: auto;
   margin: 0 auto;
   object-fit: contain;
@@ -441,13 +443,13 @@ body {
     justify-content: flex-start;
   }
 
-  #cookie-section,
-  #research-section {
+  #research-section,
+  #cookie-section {
     margin-top: 1rem;
   }
 
   .cookie-figure img {
-    max-height: 4rem;
+    max-height: 2.75rem;
   }
 
   .project-toggle {

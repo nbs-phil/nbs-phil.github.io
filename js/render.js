@@ -173,7 +173,7 @@ function renderProject(project, index) {
   `;
 }
 
-/** Fortune-cookie image block between bio and research projects. */
+/** Fortune-cookie image + caption — rendered after the project list. */
 function renderCookieBlock(summaryImage) {
   if (!summaryImage) {
     return "";
@@ -216,9 +216,6 @@ function renderSite(data) {
     </div>
   `;
 
-  document.getElementById("cookie-section").innerHTML =
-    renderCookieBlock(research.summary_image);
-
   document.getElementById("research-section").innerHTML = `
     <h2 class="research-heading">${escapeHtml(research.heading)}</h2>
     <div class="project-list">
@@ -226,8 +223,11 @@ function renderSite(data) {
     </div>
   `;
 
+  document.getElementById("cookie-section").innerHTML =
+    renderCookieBlock(research.summary_image);
+
   document.getElementById("footer-text").innerHTML = `
-    &copy; <span id="year"></span> ${escapeHtml(site.name)}. Last updated ${escapeHtml(site.footer_updated)}.
+    Last updated ${escapeHtml(site.footer_updated)}.
   `;
 }
 
@@ -252,11 +252,6 @@ function setupToggle(buttonSelector, onToggle) {
 }
 
 function initInteractions() {
-  const yearEl = document.getElementById("year");
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
-
   setupToggle(".project-toggle");
   setupToggle(".abstract-toggle", (button, expanded) => {
     const label = button.querySelector(".toggle-label");
