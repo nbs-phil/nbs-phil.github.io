@@ -1,0 +1,259 @@
+# =============================================================================
+# SITE CONTENT — edit this file to update the live page
+# =============================================================================
+#
+# The site reads ONLY this file (not content.md). After saving, hard-refresh
+# the browser (Cmd+Shift+R) to see changes. If something breaks, check:
+#   - YAML indentation (use spaces, not tabs)
+#   - Duplicate keys at the same level (e.g. two "figure:" keys — use "figures:" instead)
+#   - Image paths point to assets/images/ and use PNG/JPG (not PDF)
+#
+# PREVIEW locally:
+#   python3 -m http.server 8080
+#   open http://localhost:8080
+#
+# STRUCTURE
+# ---------
+# site          — name, bio, contact links, footer date
+#                 Also update <title> and og:* tags in index.html when changing name/description
+#                 (required for link previews — share crawlers don't run JavaScript)
+# research      — section heading + fortune-cookie image below bio
+# projects[]    — each research project (always visible on the page)
+#
+# PROJECT FIELDS
+# --------------
+# title         — project heading (required)
+# abstract      — project overview, always shown (required)
+# figure        — ONE illustration in the right column (optional)
+# figures       — MULTIPLE illustrations, stacked in the right column (optional)
+#                 Use "figures:" with a list — do NOT repeat "figure:" multiple times
+# papers[]      — list of papers under the project (optional)
+#
+# PAPER FIELDS
+# ------------
+# title         — paper name (required)
+# venue         — journal/status, e.g. "Nous, 2024" (optional)
+# link          — URL; if set, title becomes a clickable link (optional)
+# abstract      — shown when visitor clicks "Abstract" (optional)
+# figure/figures — also appear in the project figure column, after project figures
+#
+# FIGURE FIELDS (for figure or each item in figures)
+# ---------------------------------------------------
+# src           — path from site root, e.g. assets/images/Sunset.png
+# alt           — short description for screen readers (required for accessibility)
+# caption       — text below the image (optional)
+#
+# EXAMPLE — one figure:
+#   figure:
+#     src: assets/images/example.png
+#     alt: Brief description
+#     caption: Figure 1. Caption text here.
+#
+# EXAMPLE — multiple figures:
+#   figures:
+#     - src: assets/images/a.png
+#       alt: First diagram
+#       caption: Figure 2. ...
+#     - src: assets/images/b.png
+#       alt: Second diagram
+#       caption: Figure 3. ...
+# =============================================================================
+
+site:
+  name: Nathaniel Baron-Schmitt
+  description: Academic portfolio of Nathaniel
+  email: nbs@mit.edu
+  philpeople: https://philpeople.org/profiles/nathaniel-baron-schmitt
+  footer_updated: August 2026
+  bio:
+    - >
+      I am a philosopher based at the Center for Advanced Studies, Human Abilities, in Berlin, and jointly at the Freie Universitӓt Berlin. I work mainly on a mix of metaphysics and action theory, as well as ethics and philosophy of language. Before coming to Berlin, I was a postdoc at MIT, and before that, I taught at the Harvard Kennedy School of Government, while completing my PhD, also at MIT.
+
+    - >
+      This coming semester I am teaching a course on the existence of God, and organizing a reading group on trying and effort. Please contact me if you have questions about these.
+      Below are some of my main research projects.
+
+research:
+  heading: Research Projects
+  # Image shown between bio and project list ("fortune cookie" block)
+  summary_image:
+    src: assets/images/projects-summary.jpg
+    alt: Fortune cookie — summary of research projects
+    caption: |
+      I recently received this fortune, but I wasn't sure which of my examples I should expect to be inspiring. So I have included inspiring illustrations of some of my examples (drawings by Fred Schmitt).
+
+projects:
+  # --- Copy this block to add a new project ---
+  - title: Thing Causation
+    abstract: |
+      I argue that causes most fundamentally are not events, but rather things –- pianos, people, puddles. I also develop a theory of events which is designed to match our naive conception of them. The theory makes use of a concept of doing that I develop, of which I take causing to be a subspecies. Using the theory, I show how event causation reduces to thing causation. These ideas grew out of my dissertation.
+    # Single figure — use "figure:" for one image, "figures:" for several
+    figure:
+      src: assets/images/Sunset.png
+      alt: Sunset
+      caption: Figure 1. What is the relation between the sunset and the setting sun? A distinctive kind of ontological dependence that blocks the sunset from causing anything the sun does not
+    papers:
+      - title: Thing Causation
+        venue: Nous, 2024
+        link: https://doi.org/10.0000/example.1
+        abstract: |
+          I argue that causation most fundamentally involves a thing causing another thing to do something, usually by doing something itself. Event causation is reducible to thing causation. A reverse definition is not possible, for various reasons, but in particular because of the phenomenon of fine-grained causation. I also explore the structural features of thing causation, most importantly whether causing can be done ‘basically’ — not by doing anything further. I respond to objections, including C.D. Broad’s famous ‘timing’ argument and looming threats of regress.
+      - title: Fine-Grained Causation
+        venue: In progress
+        abstract: |
+          Sometimes causation is fine-grained — too fine-grained to capture as a relation between events. Some philosophers react to this problem of fine-grained causation by insisting that events are correspondingly fine-grained. I argue that this fine-grained event causation generates a new problem: it wildly underestimates how common it is for some effects to share a common cause. I then argue that causation comes both in a coarse-grained variety (which avoids this new problem) and in a fine-grained variety. I call this the dual view of causal grain. I then show how to reduce coarse-grained causation to fine-grained causation.
+      - title: Ordinary Events
+        venue: In progress
+        abstract: |
+          Helen Steward says that ‘philosophical views about the nature of such items as events [must be] regarded as stipulative—as defining a class of items useful for the purposes of some general theory or other.’ Jaegwon Kim, David Lewis, and others echo this sentiment. I disagree. We are surrounded by familiar, ordinary, everyday events, and they are a topic in their own right, just as ordinary objects are.
+          I develop a theory of ordinary events. My theory, like Kim’s classic theory, is a ‘triples’ theory. Kim’s theory associates every event with a unique triple of a thing, a repeatable the thing instantiates, and a time. This helps to capture the ontological dependence of events on things, but makes events implausibly fine-grained. I develop a medium-grained theory of events that associates events with triples, but non-uniquely. Every event is associated with infinitely many triples, and some triples are associated with multiple events. I give criteria of existence, application, and identity for events. This medium-grained theory fits our naive conception of events and explains why events are suitable referents of event-nominals. The medium-grained theory is also just what we need to make sense of how event causation can be reduced. And it sheds light on the logical structure of the determinate-determinable relation, and also provides suitable granularity to give a non-trivial formulation of token physicalism
+      - title: Doing - An Essay on Causation, Events, and Action in the Most General Sense
+        venue: PhD dissertation (MIT, 2020)
+        abstract: |
+
+
+
+  - title: Progressive Action
+    abstract: |
+      What is it to be in the process of doing something? This work approaches this question by looking at the metaphysics, logic, and semantics of progressive aspect (‘you are Ving’), with an emphasis on its importance in action theory. I think that what you are doing is only indirectly connected to your intentions and goals, and is instead closely bound up with counterfactual facts about what you would do if uninterrupted. This makes a counterfactual analysis of the progressive tempting, but I think the progressive is primitive.
+
+    figures:
+      # Multiple figures stack in the right column (top to bottom, in list order)
+      - src: assets/images/twin-cities.png
+        alt: Twin cities
+        caption: Figure 2. if you are going to the Twin Cities, then it follows, simply as a matter of logic, that you’re going to City A or going to City B.
+      - src: assets/images/rocket_ship.png
+        alt: Rocket ship
+        caption: Figure 3. No matter your intentions, without a rocket ship you are not going to the moon.
+      - src: assets/images/mountain.png
+        alt: mountain
+        caption: Figure 4.  Even when you are only partway up the mountain, you have exercised your ability to climb it.
+
+    papers:
+      - title: Progressive Specificity
+        venue:  Revise and resubmit, Mind, with Ginger Schultheis
+        link: https://doi.org/10.0000/example.2
+        abstract: |
+          We defend a new logical constraint on the progressive, Progressive Specificity, which says that what you are doing is always specific. More precisely, if you are Ving, and to V is to X or Y, then you are Xing or you are Ying. We offer seven arguments for Progressive Specificity. These arguments extend to the futurative progressive, showing that prevailing accounts of the futurative, which treat it as conveying plans, must be rejected. We explore close connections between Progressive Specificity and the principle of Conditional Excluded Middle in the logic of conditionals. These connections, alongside other logical similarities between the progressive and conditionals, suggest a conditional account of the progressive. We sketch such an account.
+
+      - title: The Primitive Progressive
+        venue: In progress
+        link: https://doi.org/10.0000/example.2
+        abstract: |
+          I argue that the progressive belongs to a cluster of concepts central to metaphysics, including causation, dispositions, counterfactuals, and objective modalities, which bear close connections to each other yet tantalizingly resist interdefinability. The most promising approach to analyzing the progressive uses counterfactual conditionals. However, counterfactual analyses of the progressive run into problems analogous to those plaguing counterfactual analyses of dispositions and causation. Masks, mimics, and finks arise for the progressive, as do backtracking problems. Quite generally, no modal analysis of the progressive is possible, because the progressive can have analogues of ‘necessary perfect masks’, which make the progressive hyperintensional. I then turn to Szabo’s reverse analysis, which defines the perfective in terms of the progressive together with causation. I argue that any reverse analysis is equally doomed to failure.
+      
+      - title: Progressive Action
+        venue: In progress, with Ginger Schultheis
+        link: https://doi.org/10.0000/example.3
+        abstract: |
+          A popular idea in action theory, inspired by Anscombe and developed by Michael Thompson, is that there is no sharp or deep distinction between intending to do something and being in the process of doing it intentionally. We argue otherwise, with an emphasis on the logic of the progressive. The logical features of the progressive sharply distinguish progressive action from mental states like intending and desiring, as well as planning and trying.
+
+      
+      - title: Ability Exercise and Causal Process
+        venue: Draft
+        link: https://doi.org/10.0000/example.3
+        abstract: |
+          A lot has been written on what it is to have an ability; little on what it is to exercise an ability you have. But exercise is important, playing a key role in influential accounts of knowledge, achievement, and control over one’s actions. I give an account of exercise in terms of causation and the progressive. I first consider the Success thesis – that S’s ability to V is exercised only if S Vs – which has recently come under compelling attack. I suggest a modest retreat to a weaker thesis I call ‘Progress’: S exercises the ability to V only if S Vs or is Ving. I then defend an additional necessary condition on exercise - the ability to V must serve as a causal background condition for S’s progress in Ving.
+
+      - title:  Essentially Intentional Action
+        venue:  Draft, with Ginger Schultheis
+        link: https://doi.org/10.0000/example.3
+        abstract: |
+          Anscombe claimed that there are some act types that can only be done intentionally. We defend this claim. We argue that Ving intentionally is itself essentially intentional: it is not possible to non-intentionally V intentionally. And we show how this explains why various other act types—such as trying, lying, and thanking—are essentially intentional. Finally, building on work by Piñeros Glassock (2020) and Beddor & Pavese (2022), we explain how this makes trouble for the ‘progressive practical knowledge’ thesis that if I am Ving intentionally, then I know that I am Ving.
+
+
+  - title: Achievement and Activity, Games and Value
+    abstract: |
+      A recently popular idea is that achievement is a fundamental source of value. I argue that achievement has a uniquely limited kind of value. It is fitting to retrospectively value achievement — to take pride and find meaning in one’s achievements, and to admire achievements of others — but not to prospectively value achievement: not to want one’s actions to be achievements. The most powerful opposing argument, for the view that achievement is prospectively valuable, is that this best explains our interest in ‘pure’ achievements with no independent value, the paradigm cases of which are games. I respond that our interest in success at games tends not to be a genuine response to the value of success, but instead is part of a make-believe that success is valuable.
+    figure:
+      src: assets/images/martian.png
+      alt: Martian
+      caption: Figure 5.  Huh. Does something great happen if the ball goes through the hoop enough times?
+
+    papers:
+      - title: Who Cares about Winning?
+        venue: European Journal of Philosophy, 2023
+        link: https://doi.org/10.0000/example.3
+        abstract: |
+          Why do we so often care about the outcomes of games when nothing is at stake? The outcome of a casual game of basketball may not matter at all, yet the players feel intense investment while playing. There is a paradox here, much like the paradox of fiction, which concerns why we care about the fates of merely fictional beings. I argue that the paradox threatens to overturn much of what philosophers have thought about caring, severing its connection to value and undermining its moral weight. Drawing on Kendall Walton’s work, I defend a solution that takes games to involve make-believe: players make believe that the game’s outcome matters. Fans and spectators engage in similar make-believe.
+
+      - title: Fandom as Make-Believe
+        venue: Sport, Ethics, and Philosophy, 2024 (part of this symposium)
+        abstract: |
+          I defend the make-believe view of fans and spectators, addressing several arguments from Archer & Wojtowicz.
+
+      - title: Goal-Directed Activity
+        venue: In progress
+        abstract: |
+          Here’s a related question: why do players try to win, when winning does not matter? I develop this puzzle, emphasizing its generality: it can arise for any activity that requires aiming at a goal. If we want to engage in the goal-directed activity, but we see that the goal is not valuable, why and how do we aim at the goal? Make-believe is only sometimes a part of the answer: you make believe that the goal is valuable in order to engage in the valuable activity. Another part of my answer involves rejecting standard versions of the ‘guise of the good’. We can set goals for ourselves, and do so rationally, even though we can see that achieving the goal wouldn’t be valuable. Cases like Kavka’s toxin puzzle raise a challenge for my answer, and I explain why we sometimes can, and sometimes cannot, bring ourselves to aim at a goal that we do not view as valuable.
+
+      - title: How Should We Value Achievement?
+        venue:  Planned paper
+        abstract: |
+          A traditional list of the fundamental sources of value might include pleasure, knowledge, virtue, and beauty, but recently there has been a push to add achievement. I argue that achievement differs from these other goods in that it has a distinctively ‘retrospective’ sort of value, making achievement fitting to admire and take pride in, but not to desire or promote. Wanting your own actions to be achievements would involve a kind of conative tension: it would mean that you want to encounter difficulty in the pursuit of your own goals. I contrast the unfittingness of desiring achievement with the more familiar paradox of hedonism, and with ‘morally fetishistic’ desires.
+
+  - title: Ennobling Explanations
+    abstract: |
+      Explanatory relations (causation, grounding, basing, teleological dependence, etc.) obey a relevance constraint. I argue that relevance can be contingent and extrinsic, resulting in modal gaps between the relata and the explanatory connection. Even if cause necessitates effect and ground necessitates grounded, the two relata together may not necessitate that they stand in the relation of causation/grounding. These modal gaps, common to all explanatory relations, are filled by a special kind of higher-order explanation called an ‘ennobling explanation’. An ennobler explains why some facts are relevant enough to another fact to explain it, making them ‘noble’ explanans rather than mere sufficers or probabilifiers.
+
+    figure:
+      src: assets/images/alice.png
+      alt: Alice and Betch
+      caption: Figure 6. Alice and Beth are real people who really have hats. No one else is depicted here. These facts make it the case that everyone depicted in the picture has a hat. But they only contingently do so. Suppose Beth, without losing her hat, were deleted from the picture. Then only Alice’s hattedness would make it the case that everyone depicted has a hat.
+
+    papers:
+      - title: Contingent Grounding
+        venue:  Synthese, 2021
+        abstract: |
+          I argue that whether some facts ground another can be a contingent matter. The contingency of grounding entails that every previously proposed theory of what grounds grounding facts is false. I construct a new theory, the ennobling theory. Ennoblers are meta-grounds.
+
+      - title: How Similar Are Causation and Grounding? Extrinsicality, Contingency, Ennobling
+        venue: Forthcoming, Facets of Reality, with Lisa Vogt
+        abstract: |
+          We argue that the contingency of grounding strengthens the parallel between grounding and causation. Just as trumping preemption shows that causation is not an intrinsic relation, similar cases of grounding show it not to be an internal relation.
+
+
+  - title:  Haecceitistic Gaps
+    abstract: |
+      Haecceitism says that the qualitative facts don’t necessitate the facts about individuals. There are multiple possible worlds compatible with a full qualitative description of the world. But how many possible worlds? How haecceitistic is modal space? I explore this question.
+
+    figure:
+      src: assets/images/Eiffel_tower.png
+      alt: Eiffel Tower
+      caption: Figure 7.  In Paris you will find the Eiffel Tower, not just an exact copy of it. What in fundamental reality determines that the Eiffel Tower is there, and not just a duplicate?
+
+
+    papers:
+      - title: Haecceitism Untethered
+        venue: Email for a draft
+        abstract: |
+          I motivate a constraint on modal space. Tethering says that for any distinct duplicate worlds w1 and w2 with the same fundamental individuals, w1 and w2 differ in their permutations of fundamental individuals. Anti-haecceitism trivially entails Tethering, but haecceitism is logically neutral on Tethering. I argue that haecceitists should accept Tethering. After motivating Tethering, I pose a serious problem for it. The problem concerns the possibility of ‘recycling’ of an object’s parts, Ship-of-Theseus-style, either across time or across possible worlds. It is extremely difficult to avoid the conclusion that the fundamental facts about an object’s very small parts, and indeed about any plausibly fundamental objects, could necessitate that it is the Ship of Theseus was have here, rather than some other duplicate ship.
+
+
+      - title: Microism Lost?
+        venue:  R&R, Philosophical Quarterly
+        abstract: |
+          I consider what lesson we should draw from these recycling problems. The most common lesson drawn in recent work is that macro objects are fundamental. I show a surprising problem for this macroist view. It results in widespread overdetermination, on which qualitative facts about macro objects have two separate fundamental grounds.
+
+
+  - title: Supererogation and Duty to Self.
+    abstract: |
+      A theory of supererogation must account for both its optionality and its permissibility. The best way to do this is to posit ‘prerogatives’, which are balanced against the reasons in favor of superogating. But what are prerogatives? We say they are waivable duties to oneself.
+
+    figure:
+      src: assets/images/Ouch.png
+      alt: Wronging Oneself
+      caption: Figure 8. Is this man wronging himself? If and only if in pinching another person with their consent, he’d be wronging them.
+
+    papers:
+      - title: Supererogation and the Limits of Reasons
+        venue: Springer Handbook on Supererogation, 2023, with Daniel Muñoz
+        link: https://doi.org/10.0000/example.3
+        abstract: |
+          A reasons first approach to ethics leaves no room for supererogation, we argue. In addition to reasons, which favor an option, we also need something that justifies a suboptimal option without favoring it. For if justifiers also favored the suboptimal option, then the supererogatory option would be worse than it. These mere justifiers or ‘prerogatives’ are needed even if we posit ‘non-requiring’ reasons. But what exactly plays this role of ‘merely justifying’? Duties to oneself, we suggest.
+
+      - title: Wronging Oneself
+        venue: Journal of Philosophy, 2024, with Daniel Muñoz
+        abstract: |
+          We give our theory of duties to oneself. They work just like duties to others; mostly importantly, they have the same conditions for waiver. The result is a self-other symmetric view of morality, on which we wrong ourselves exactly when we do to ourselves what would wrong a relevantly similar consenting other.
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+  Static shell — content comes from content.yaml via js/render.js.
+  Edit content.yaml for all text, projects, papers, and images.
+  Share preview (link title/description): edit <title> and og:* tags below — crawlers
+  don't run JS; keep them in sync with site.name and site.description in content.yaml.
+  Bump ?v= on css/style.css and js/render.js after changing those files.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic portfolio of Nathaniel">
+  <title>Nathaniel Baron-Schmitt</title>
+
+  <!-- Link preview when sharing (iMessage, Slack, etc.) — keep in sync with content.yaml -->
+  <meta property="og:title" content="Nathaniel Baron-Schmitt">
+  <meta property="og:description" content="Academic portfolio of Nathaniel">
+  <meta property="og:url" content="https://nbs-phil.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://nbs-phil.github.io/assets/images/projects-summary.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nathaniel Baron-Schmitt">
+  <meta name="twitter:description" content="Academic portfolio of Nathaniel">
+  <meta name="twitter:image" content="https://nbs-phil.github.io/assets/images/projects-summary.jpg">
+
+  <link rel="stylesheet" href="css/style.css?v=24">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <section class="section page-intro">
+      <div class="container">
+        <div id="bio-section"></div>
+        <div id="cookie-section"></div>
+        <div id="research-section"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p id="footer-text"></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <script src="js/render.js?v=22"></script>
+</body>
+</html>
