@@ -99,10 +99,6 @@ projects:
         link: https://doi.org/10.0000/example.1
         abstract: |
           I argue that causation most fundamentally involves a thing causing another thing to do something, usually by doing something itself. Event causation is reducible to thing causation. A reverse definition is not possible, for various reasons, but in particular because of the phenomenon of fine-grained causation. I also explore the structural features of thing causation, most importantly whether causing can be done ‘basically’ — not by doing anything further. I respond to objections, including C.D. Broad’s famous ‘timing’ argument and looming threats of regress.
-      - title: Fine-Grained Causation
-        venue: In progress
-        abstract: |
-          Sometimes causation is too fine-grained to capture as a relation between events. Some philosophers react to this problem of fine-grained causation by insisting that events are correspondingly fine-grained. I argue that this fine-grained event causation generates a new problem: it wildly underestimates how common it is for some effects to share a common cause. I then argue that causation comes both in a coarse-grained variety (which avoids this new problem) and in a fine-grained variety. I call this the dual view of causal grain. I then show how to reduce coarse-grained causation to fine-grained causation.
       - title: Ordinary Events
         venue: In progress
         abstract: |
@@ -143,15 +139,14 @@ projects:
         venue: In progress
         link: https://doi.org/10.0000/example.2
         abstract: |
-          I argue that the progressive belongs to a cluster of concepts central to metaphysics, including causation, dispositions, counterfactuals, and objective modalities, which bear close connections to each other yet tantalizingly resist interdefinability. The most promising approach to analyzing the progressive uses counterfactual conditionals. However, counterfactual analyses of the progressive run into problems analogous to those plaguing counterfactual analyses of dispositions and causation. Masks, mimics, and finks arise for the progressive, as do backtracking problems. Quite generally, no modal analysis of the progressive is possible, because the progressive can have analogues of ‘necessary perfect masks’, which make the progressive hyperintensional. I then turn to Szabo’s reverse analysis, which defines the perfective in terms of the progressive together with causation. I argue that any reverse analysis is equally doomed to failure.
-      
+          I argue that the progressive belongs to a cluster of concepts central to metaphysics, including causation, dispositions, counterfactuals, and objective modalities, which bear close connections to each other yet tantalizingly resist interdefinability.
+
       - title: Progressive Action
         venue: In progress, with Ginger Schultheis
         link: https://doi.org/10.0000/example.3
         abstract: |
           A popular idea in action theory, inspired by Anscombe and developed by Michael Thompson, is that there is no sharp or deep distinction between intending to do something and being in the process of doing it intentionally. We argue otherwise, with an emphasis on the logic of the progressive. The logical features of the progressive sharply distinguish progressive action from mental states like intending and desiring, as well as planning and trying.
 
-      
       - title: Ability Exercise and Causal Process
         venue: Draft
         link: https://doi.org/10.0000/example.3
@@ -225,19 +220,16 @@ projects:
       alt: Eiffel Tower
       caption: In Paris you will find the Eiffel Tower, not just an exact copy of it. What in fundamental reality determines that the Eiffel Tower is there, and not just a duplicate?
 
-
     papers:
       - title: Haecceitism Untethered
         venue: Draft
         abstract: |
           I motivate a constraint on modal space. Tethering says that for any distinct duplicate worlds w1 and w2 with the same fundamental individuals, w1 and w2 differ in their permutations of fundamental individuals. Anti-haecceitism trivially entails Tethering, but haecceitism is logically neutral on Tethering. I argue that haecceitists should accept Tethering. After motivating Tethering, I pose a serious problem for it. The problem concerns the possibility of ‘recycling’ of an object’s parts, Ship-of-Theseus-style, either across time or across possible worlds. It is extremely difficult to avoid the conclusion that the fundamental facts about an object’s very small parts, and indeed about any plausibly fundamental objects, could necessitate that it is the Ship of Theseus was have here, rather than some other duplicate ship.
 
-
       - title: Microism Lost?
         venue:  Draft, R&R
         abstract: |
-          What lesson should we draw from these recycling problems? (See above.) The most common lesson drawn in recent work is that macro objects are fundamental. I show a surprising problem for this macroist view. It results in widespread overdetermination, on which qualitative facts about macro objects have two separate fundamental grounds.
-
+          What lesson should we draw from these recycling problems? (See above.) The most common lesson drawn in recent work is that macro objects are fundamental. This macroist view runs into unexpected problems.
 
   - title: Supererogation and Duty to Self
     abstract: |
