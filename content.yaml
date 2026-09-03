@@ -17,6 +17,8 @@
 # site          — name, bio, contact links, footer date
 #                 Also update <title> and og:* tags in index.html when changing name/description
 #                 (required for link previews — share crawlers don't run JavaScript)
+#                 Inline links in bio, venue, or abstract: <a href="https://example.com">text</a>
+#                 Bare domains work too: <a href="example.com">text</a>
 # research      — section heading, then projects; fortune-cookie image + caption follow below
 # projects[]    — each research project (always visible on the page)
 #

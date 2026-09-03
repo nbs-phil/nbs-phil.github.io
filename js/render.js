@@ -17,12 +17,54 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 
+/** Add https:// to bare domains; block unsafe schemes. */
+function normalizeHref(href) {
+  const trimmed = href.trim();
+  if (!trimmed || /^(javascript:|data:|file:)/i.test(trimmed)) {
+    return null;
+  }
+  if (/^(https?:|mailto:)/i.test(trimmed)) {
+    return trimmed;
+  }
+  if (trimmed.startsWith("//")) {
+    return `https:${trimmed}`;
+  }
+  return `https://${trimmed.replace(/^\/+/, "")}`;
+}
+
+const INLINE_LINK_RE = /<a\s+href="([^"]+)">([\s\S]*?)<\/a>/gi;
+
+/**
+ * Escape text but render <a href="...">...</a> from content.yaml as safe links.
+ * Use full URLs in href, or bare domains (https:// is added automatically).
+ */
+function formatInlineText(text) {
+  let result = "";
+  let lastIndex = 0;
+  let match;
+
+  INLINE_LINK_RE.lastIndex = 0;
+  while ((match = INLINE_LINK_RE.exec(text)) !== null) {
+    result += escapeHtml(text.slice(lastIndex, match.index));
+    const href = normalizeHref(match[1]);
+    if (href) {
+      result += `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(match[2])}</a>`;
+    } else {
+      result += escapeHtml(match[0]);
+    }
+    lastIndex = match.index + match[0].length;
+  }
+
+  result += escapeHtml(text.slice(lastIndex));
+  return result;
+}
+
 /** Split block text on blank lines into <p> tags. Used for abstracts. */
 function paragraphsHtml(text) {
   return text
     .trim()
     .split(/\n\s*\n/)
-    .map((p) => `<p>${escapeHtml(p.trim())}</p>`)
+    .map((p) => `<p>${formatInlineText(p.trim())}</p>`)
     .join("");
 }
 
@@ -104,7 +146,7 @@ function renderProjectFigures(project) {
 function renderPaper(paper, projectIndex, paperIndex) {
   const expandableId = `paper-${projectIndex}-${paperIndex}-expandable`;
   const venue = paper.venue
-    ? `<p class="paper-venue">${escapeHtml(paper.venue)}</p>`
+    ? `<p class="paper-venue">${formatInlineText(paper.venue)}</p>`
     : "";
 
   return `
@@ -212,7 +254,7 @@ function renderSite(data) {
       </ul>
     </div>
     <div class="bio">
-      ${site.bio.map((p) => `<p>${escapeHtml(p.trim())}</p>`).join("")}
+      ${site.bio.map((p) => `<p>${formatInlineText(p.trim())}</p>`).join("")}
     </div>
   `;
 
