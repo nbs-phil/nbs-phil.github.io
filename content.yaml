@@ -234,7 +234,8 @@ projects:
 
   - title: Supererogation and Duty to Self
     abstract: |
-      A theory of supererogation must account for both its optionality and its permissibility. The best way to do this is to posit ‘prerogatives’, which are balanced against the reasons in favor of superogating. But what are prerogatives? Waivable duties to oneself.
+      A theory of supererogation must account for both its optionality and its permissibility. The best way to do this is to posit ‘prerogatives’, which are balanced against the reasons in favor of superogating. But what are prerogatives? The surprising answer: waivable duties to oneself.
+      These are coauthored with <a href="munozphilosophy.com">Daniel Muñoz</a>, who is now writing a book, partly coauthored with me, on these topics: <em>What We Owe to Ourselves</em>, forthcoming on OUP.
 
     figure:
       src: assets/images/Ouch.png
@@ -243,13 +244,13 @@ projects:
 
     papers:
       - title: Supererogation and the Limits of Reasons
-        venue: <em>Springer Handbook on Supererogation</em>, 2023, with <a href="munozphilosophy.com">Daniel Muñoz</a>
+        venue: <em>Springer Handbook on Supererogation</em>, 2023
         link: https://drive.google.com/file/d/1QKu3bdtY_qoppzHstAp_rCa-kKrix0BH/view?usp=drive_link
         abstract: |
-          A reasons first approach to ethics leaves no room for supererogation, we argue. In addition to reasons, which favor an option, we also need something that justifies a suboptimal option without favoring it. For if justifiers also favored the suboptimal option, then the supererogatory option would be worse than it. These mere justifiers or ‘prerogatives’ are needed even if we posit ‘non-requiring’ reasons. But what exactly plays this role of ‘merely justifying’? Duties to oneself, we suggest.
+          A "Reasons First" approach to ethics leaves no room for supererogation, we argue. In addition to reasons, which favor an option, we also need something that justifies a suboptimal option without favoring it. For if justifiers also favored the suboptimal option, then the supererogatory option would be worse than it. These mere justifiers or ‘prerogatives’ are needed even if we posit ‘non-requiring’ reasons. But what exactly plays this role of ‘merely justifying’? Duties to oneself, we suggest.
 
       - title: Wronging Oneself
-        venue: <em>Journal of Philosophy</em>, 2024, with Daniel Muñoz
+        venue: <em>Journal of Philosophy</em>, 2024
         link: https://static1.squarespace.com/static/59d018249f74567b7ee663ec/t/6a8970a51da0ba66ddcef112/1787392165507/Munoz+and+Baron-Schmitt+-+Wronging+Oneself+-+published+version.pdf
         abstract: |
           We give our theory of duties to oneself. They work just like duties to others; most importantly, they have the same conditions for waiver. The result is a self-other symmetric view of morality, on which we wrong ourselves exactly when we do to ourselves what would wrong a relevantly similar consenting other.
