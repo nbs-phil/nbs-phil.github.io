@@ -17,8 +17,8 @@
 # site          — name, bio, contact links, footer date
 #                 Also update <title> and og:* tags in index.html when changing name/description
 #                 (required for link previews — share crawlers don't run JavaScript)
-#                 Inline links in bio, venue, or abstract: <a href="https://example.com">text</a>
-#                 Bare domains work too: <a href="example.com">text</a>
+#                 Inline links: <a href="https://example.com">text</a> (bare domains OK)
+#                 Inline italic: <em>text</em> or <i>text</i> — in bio, venue, abstracts
 # research      — section heading, then projects; fortune-cookie image + caption follow below
 # projects[]    — each research project (always visible on the page)
 #
@@ -97,7 +97,7 @@ projects:
       caption: What is the relation between the sunrise and the rising sun? A distinctive kind of ontological dependence that blocks the sunrise from causing anything the sun does not.
     papers:
       - title: Thing Causation
-        venue: Nous, 2024
+        venue: <em>Nous</em>, 2024
         link: https://drive.google.com/file/d/1rBbmC7hS8FIkUapPVDWNtfroWlalpLIx/view?usp=drive_link
         abstract: |
           I argue that causation most fundamentally involves a thing causing another thing to do something, usually by doing something itself. Event causation is reducible to thing causation. A reverse definition is not possible, for various reasons, but in particular because of the phenomenon of fine-grained causation. I also explore the structural features of thing causation, most importantly whether causing can be done ‘basically’ — not by doing anything further. I respond to objections, including C.D. Broad’s famous ‘timing’ argument and looming threats of regress.

@@ -32,30 +32,69 @@ function normalizeHref(href) {
   return `https://${trimmed.replace(/^\/+/, "")}`;
 }
 
-const INLINE_LINK_RE = /<a\s+href="([^"]+)">([\s\S]*?)<\/a>/gi;
+const INLINE_LINK_RE = /^<a\s+href="([^"]+)">([\s\S]*?)<\/a>/i;
+const INLINE_EM_RE = /^<(?:em|i)>([\s\S]*?)<\/(?:em|i)>/i;
+
+function findInlineToken(text) {
+  const candidates = [];
+
+  const linkIndex = text.search(/<a\s+href="/i);
+  if (linkIndex !== -1) {
+    const match = text.slice(linkIndex).match(INLINE_LINK_RE);
+    if (match) {
+      candidates.push({ type: "link", index: linkIndex, match, full: match[0] });
+    }
+  }
+
+  const emIndex = text.search(/<(?:em|i)>/i);
+  if (emIndex !== -1) {
+    const match = text.slice(emIndex).match(INLINE_EM_RE);
+    if (match) {
+      candidates.push({ type: "em", index: emIndex, match, full: match[0] });
+    }
+  }
+
+  if (!candidates.length) {
+    return null;
+  }
+
+  candidates.sort((a, b) => a.index - b.index);
+  return candidates[0];
+}
 
 /**
- * Escape text but render <a href="...">...</a> from content.yaml as safe links.
- * Use full URLs in href, or bare domains (https:// is added automatically).
+ * Escape text but render safe inline markup from content.yaml:
+ *   <a href="...">...</a>  <em>...</em>  <i>...</i>
+ * Tags can nest (e.g. italic text containing a link).
  */
 function formatInlineText(text) {
   let result = "";
-  let lastIndex = 0;
-  let match;
+  let remaining = text;
 
-  INLINE_LINK_RE.lastIndex = 0;
-  while ((match = INLINE_LINK_RE.exec(text)) !== null) {
-    result += escapeHtml(text.slice(lastIndex, match.index));
-    const href = normalizeHref(match[1]);
-    if (href) {
-      result += `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(match[2])}</a>`;
-    } else {
-      result += escapeHtml(match[0]);
+  while (remaining.length) {
+    const token = findInlineToken(remaining);
+    if (!token) {
+      result += escapeHtml(remaining);
+      break;
     }
-    lastIndex = match.index + match[0].length;
+
+    result += escapeHtml(remaining.slice(0, token.index));
+
+    if (token.type === "link") {
+      const href = normalizeHref(token.match[1]);
+      const inner = formatInlineText(token.match[2]);
+      if (href) {
+        result += `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${inner}</a>`;
+      } else {
+        result += escapeHtml(token.full);
+      }
+    } else {
+      result += `<em>${formatInlineText(token.match[1])}</em>`;
+    }
+
+    remaining = remaining.slice(token.index + token.full.length);
   }
 
-  result += escapeHtml(text.slice(lastIndex));
   return result;
 }
 
@@ -202,7 +241,6 @@ function renderProject(project, index) {
             ${
               papers
                 ? `<div class="paper-list">
-                    <h4 class="paper-list-heading">Papers</h4>
                     ${papers}
                   </div>`
                 : ""
