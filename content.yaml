@@ -15,8 +15,8 @@
 # STRUCTURE
 # ---------
 # site          — name, bio, contact links, footer date
-#                 Also update <title> and og:* tags in index.html when changing name/description
-#                 (required for link previews — share crawlers don't run JavaScript)
+#                 Also update <title>, meta description, and og:* tags in index.html
+#                 (search engines and link previews don't run JavaScript)
 #                 Inline links: <a href="https://example.com">text</a> (bare domains OK)
 #                 Inline italic: <em>text</em> or <i>text</i> — in bio, venue, abstracts
 # research      — section heading, then projects; fortune-cookie image + caption follow below
@@ -63,7 +63,7 @@
 
 site:
   name: Nathaniel Baron-Schmitt
-  description: Academic portfolio of Nathaniel
+  description: Philosopher working on metaphysics, action theory, ethics, and philosophy of language. Academic portfolio.
   email: nbs@mit.edu
   philpeople: https://philpeople.org/profiles/nathaniel-baron-schmitt
   footer_updated: August 2026

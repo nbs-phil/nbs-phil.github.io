@@ -2,26 +2,29 @@
 <!--
   Static shell — content comes from content.yaml via js/render.js.
   Edit content.yaml for all text, projects, papers, and images.
-  Share preview (link title/description): edit <title> and og:* tags below — crawlers
-  don't run JS; keep them in sync with site.name and site.description in content.yaml.
+  Share preview and Google search: edit <title>, meta description, and og:* below.
+  Keep in sync with site.name and site.description in content.yaml.
+  SEO files: robots.txt and sitemap.xml in repo root.
   Bump ?v= on css/style.css and js/render.js after changing those files.
 -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Academic portfolio of Nathaniel">
-  <title>Nathaniel Baron-Schmitt</title>
+  <meta name="description" content="Academic portfolio of Nathaniel Baron-Schmitt, philosopher working on metaphysics, action theory, ethics, and philosophy of language. Berlin and MIT.">
+  <meta name="author" content="Nathaniel Baron-Schmitt">
+  <title>Nathaniel Baron-Schmitt — Philosopher | Metaphysics &amp; Action Theory</title>
+  <link rel="canonical" href="https://nbs-phil.github.io/">
 
   <!-- Link preview when sharing (iMessage, Slack, etc.) — keep in sync with content.yaml -->
-  <meta property="og:title" content="Nathaniel Baron-Schmitt">
-  <meta property="og:description" content="Academic portfolio of Nathaniel">
+  <meta property="og:title" content="Nathaniel Baron-Schmitt — Philosopher">
+  <meta property="og:description" content="Academic portfolio of Nathaniel Baron-Schmitt, philosopher working on metaphysics, action theory, ethics, and philosophy of language.">
   <meta property="og:url" content="https://nbs-phil.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://nbs-phil.github.io/assets/images/projects-summary.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Nathaniel Baron-Schmitt">
-  <meta name="twitter:description" content="Academic portfolio of Nathaniel">
+  <meta name="twitter:title" content="Nathaniel Baron-Schmitt — Philosopher">
+  <meta name="twitter:description" content="Academic portfolio of Nathaniel Baron-Schmitt, philosopher working on metaphysics, action theory, ethics, and philosophy of language.">
   <meta name="twitter:image" content="https://nbs-phil.github.io/assets/images/projects-summary.jpg">
 
   <link rel="stylesheet" href="css/style.css?v=41">
@@ -30,6 +33,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <noscript>
+    <p>Nathaniel Baron-Schmitt is a philosopher based in Berlin and formerly at MIT, working on metaphysics, action theory, ethics, and philosophy of language.</p>
+  </noscript>
   <main>
     <section class="section page-intro">
       <div class="container">
